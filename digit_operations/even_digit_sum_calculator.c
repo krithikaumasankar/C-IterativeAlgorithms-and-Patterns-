@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+        int rem, n,ori,s=0;
+        printf("\n...TO FIND THE SUM EVEN DIGITS...\n");
+        printf("\nEnter n:");
+        scanf("%d",&n);
+        ori=n;
+        while(n>0)
+        {
+                rem=n%10;
+                if(rem%2==0)
+                        s=s+rem;
+                n=n/10;
+        }
+        printf("The sum of even digits in %d is %d\n",ori,s);
+        return 0;
+}
